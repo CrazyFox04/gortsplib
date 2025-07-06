@@ -190,7 +190,7 @@ func (s *Server) Start() error {
 		s.receiverReportPeriod = 10 * time.Second
 	}
 	if s.sessionTimeout == 0 {
-		s.sessionTimeout = 1 * 60 * time.Second
+		s.sessionTimeout = 1 * 1 * time.Second
 	}
 	if s.checkStreamPeriod == 0 {
 		s.checkStreamPeriod = 1 * time.Second
